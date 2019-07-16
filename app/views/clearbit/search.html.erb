@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <tr>
+    <th>Company</th>
+    <th>Domain</th>
+    <th>Logo</th>
+  </tr>
+  <% @companies.each do |c| %>
+    <tr>
+      <td><%= c["name"] %></td>
+      <td><%= c["domain"] %></td>
+      <td><img src="<%= c["logo"] %>"></td>
+    </tr>
+  <% end %>
+</table>
